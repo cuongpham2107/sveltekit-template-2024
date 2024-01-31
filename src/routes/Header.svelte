@@ -20,7 +20,7 @@
 			<enhanced:img
 				class={`w-6 ${$page.url.pathname !== '/' ? 'saturate-50' : ''}`}
 				src={kritic}
-				alt="The Kritic, SvelteKritic’s mascot"
+				alt="The 10xify logo, a rocket launching"
 			/>
 			<svelte:element this={pageTitleElement} class="inline-block"
 				>SvelteKritic</svelte:element
@@ -28,14 +28,7 @@
 		>
 		<div class="flex gap-4">
 			<ul class="flex gap-4">
-				<li>
-					<a
-						href="/tierlists/2023"
-						class={$page.url.pathname.startsWith('/tierlists')
-							? activePageClasses
-							: undefined}>tierlists</a
-					>
-				</li>
+				
 				<li>
 					<a
 						href="/about"

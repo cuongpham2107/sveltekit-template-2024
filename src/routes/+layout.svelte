@@ -10,14 +10,14 @@
 	import Footer from './Footer.svelte'
 
 	const defaultMeta = {
-		title: 'SvelteKritic',
+		title: '10xify',
 		description:
-			'A place to query the OpenCritic API, with that sweet SvelteKit UX 🚀',
+			'A place to query the OpenCritic API, with that sweet SvelteKit UX 🚀 ',
 		ogImageUrl: '/og.png',
 	}
 
 	$: title = $page.data.meta?.title
-		? `${$page.data.meta?.title} 👾 SvelteKritic`
+		? `${$page.data.meta?.title} 👾 10xify`
 		: defaultMeta.title
 	$: description = $page.data.meta?.description ?? defaultMeta.description
 	$: ogImageUrl = `${$page.url.origin}${
